@@ -2,6 +2,9 @@ const router = require('express').Router();
 const { User, comment, post } = require('../../models')
 
 router.get('/', (req, res) => {
+    res.render('userSignUp');
+});
+router.get('/', (req, res) => {
     User.findAll({
       attributes: { exclude: ['password'] }
     })
@@ -26,7 +29,7 @@ router.get('/:id', (req, res) => {
           model: comment,
           attributes: ['id', 'comment_text', 'created_at'],
           include: {
-            model: Post,
+            model: post,
             attributes: ['title']
           }
         },
@@ -88,9 +91,27 @@ router.post('/login', (req, res) => {
 
     console.log(req.body);
 });
-
-router.get('/', (req, res) => {
-    res.render('userSignUp');
+router.put('/:id', (req, res) => {
+    // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
+  
+    // pass in req.body instead to only update what's passed through
+    User.update(req.body, {
+      individualHooks: true,
+      where: {
+        id: req.params.id
+      }
+    })
+      .then(dbUserData => {
+        if (!dbUserData[0]) {
+          res.status(404).json({ message: 'No user found with this id' });
+          return;
+        }
+        res.json(dbUserData);
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      });
 });
 
 module.exports = router;
