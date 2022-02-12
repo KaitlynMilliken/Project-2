@@ -48,6 +48,7 @@ router.get('/:id', (req, res) => {
       });
   });
 router.post('/', (req, res) => {
+  console.log("hello we are here");
      User.create({
          username: req.body.username,
          email: req.body.email,
@@ -72,21 +73,22 @@ router.post('/login', (req, res) => {
              return;
          }
 
-         const validPassword = dbUserData.checkPassword(req.body.password);
+         //const validPassword = dbUserData.checkPassword(req.body.password);
+         const validPassword = req.body.password;
 
         if (!validPassword) {
              res.status(400).json({ message: 'Incorrect password!' });
             return;
         }
 
-        req.session.save(() => {
-             // declare session variables
-             req.session.user_id = dbUserData.id;
-             req.session.username = dbUserData.username;
-             req.session.loggedIn = true;
+        // req.session.save(() => {
+        //      // declare session variables
+        //      req.session.user_id = dbUserData.id;
+        //      req.session.username = dbUserData.username;
+        //      req.session.loggedIn = true;
 
-            res.json({ user: dbUserData, message: 'You are now logged in!' });
-        });
+        //     res.json({ user: dbUserData, message: 'You are now logged in!' }).redirect('/posts');
+        // });
     });
 
     console.log(req.body);
