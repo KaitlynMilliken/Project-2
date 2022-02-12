@@ -16,6 +16,7 @@ router.get('/newPost', (req, res) => {
 });
 
 router.get('/', (req, res) => {
+  console.log(req.session);
   res.render('homepage');
 });
 router.get('/login', (req, res) => {
