@@ -15,14 +15,6 @@ async function signupFormHandler(event) {
             }),
             headers: { 'Content-Type': 'application/json' }
         });
-        console.log(response);
-
-        if (response.ok) {
-            console.log('success');
-        }
-        else {
-            alert(response.statusText);
-        }
     }
 }
 
@@ -44,7 +36,7 @@ async function loginFormHandler(event) {
         });
 
         if (response.ok) {
-            document.location.replace('/');
+            document.location.replace('/posts');
         } else {
             alert(response.statusText);
         }

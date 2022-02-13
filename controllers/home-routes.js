@@ -1,14 +1,20 @@
 const router = require('express').Router();
-const { User, post, comment, admin } = require('../models');
+const { User, Post, Comment, Admin } = require('../models');
 
 router.get('/posts', (req, res) => {
-  const myPosts = [{
-    title: "Hello"
-  }, {
-    title: 'hello 2'
-  }];
-
-  res.render('posts', {posts: myPosts});
+  Post.findAll({
+    attributes: [
+      'id',
+      'title',
+      'description',
+      'created_at',
+      'updated_at'
+  ]}).then(dbPostData => {
+        const posts = dbPostData.map(post => post.get({ plain: true }));
+        res.render('posts', { posts });
+  }).catch(err => {
+    res.status(500).json(err);
+  });
 });
 
 router.get('/newPost', (req, res) => {

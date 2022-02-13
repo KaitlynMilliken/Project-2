@@ -1,10 +1,10 @@
 const router = require('express').Router();
 const { Post } = require('../../models');
 
-router.post('/test', (req, res) => {
+router.post('/newPost', (req, res) => {
     Post.create({
-        title: req.body.postTitle,
-        postBody: req.body.postBody
+        title: req.body.title,
+        description: req.body.description
     })
         .then(dbUserData => res.json(dbUserData))
         .catch(err => {
