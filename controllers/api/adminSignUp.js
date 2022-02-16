@@ -10,7 +10,7 @@ router.post('/', (req, res) => {
     .then(dbAdminData => {
      req.session.save(() => {
        req.session.admin_id = dbAdminData.id;
-       req.session.username = dbUserData.username;
+       req.session.username = dbAdminData.username;
        req.session.loggedIn = true;
    
        res.json(dbAdminData);
