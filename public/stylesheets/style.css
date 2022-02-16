@@ -7,3 +7,35 @@ a {
 .post-submit{
     float: right;
 }
+
+.parent {
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+.child {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+}
+
+.form-i {
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+.form-u {
+    padding-bottom: 10px ;
+}
+
+.btn {
+    padding-top: 10px;
+}
+.outer-border{
+    padding: 300px;
+}
+.login-border {
+    border: 10px solid black;
+    border-radius: 20px;
+    
+}

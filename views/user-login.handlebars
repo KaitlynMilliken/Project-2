@@ -1,65 +1,79 @@
-<div>
-    <form class="login-form">
-        <div>
-            <label for="email-login">email:</label>
-            <input type="text" id="email-login" />
-        </div>
-        <div>
-            <label for="password-login">password:</label>
-            <input type="password" id="password-login" />
-        </div>
-        <div>
-            <button type="submit">login</button>
-        </div>
-    </form>
+<div class="outer-border">
+<div class="login-border">
+<div class="parent">
+    <div class="fs-2">User</div>
+    <div class="child">
+        <form class="login-form">
+            <div class="form-i">
+                <label for="email-login">email:</label>
+                <input type="text" id="email-login" />
+            </div>
+            <div>
+                <label for="password-login">password:</label>
+                <input type="password" id="password-login" />
+            </div>
+            <div class="btn">
+                <button class="post-submit btn btn-primary" type="submit">login</button>
+            </div>
+        </form>
+    </div>
+    <div class="child">
+        <form class="signup-form">
+            <div class="form-u">
+                <label for="username-signup">username:</label>
+                <input type="text" id="username-signup" />
+            </div>
+            <div class="form-i">
+                <label for="email-signup">email:</label>
+                <input type="text" id="email-signup" />
+            </div>
+            <div>
+                <label for="password-signup">password:</label>
+                <input type="password" id="password-signup" />
+            </div>
+            <div class="btn">
+                <button class="post-submit btn btn-primary" type="submit">signup</button>
+            </div>
+        </form>
+    </div>
 </div>
-    <form class="signup-form">
-        <div>
-            <label for="username-signup">username:</label>
-            <input type="text" id="username-signup" />
-        </div>
-        <div>
-            <label for="email-signup">email:</label>
-            <input type="text" id="email-signup" />
-        </div>
-        <div>
-            <label for="password-signup">password:</label>
-            <input type="password" id="password-signup" />
-        </div>
-        <div>
-            <button type="submit">signup</button>
-        </div>
-    </form>
-
-<form class="alogin-form">
-    <div>
-        <label for="email-login">email:</label>
-        <input type="text" id="aem-login" />
+<div class="parent">
+    <div class="fs-2">Admin</div>
+    <div class="child">
+        <form class="alogin-form">
+            <div class="form-i">
+                <label for="email-login">email:</label>
+                <input type="text" id="aem-login" />
+            </div>
+            <div>
+                <label for="password-login">password:</label>
+                <input type="password" id="apw-login" />
+            </div>
+            <div class="btn">
+                <button class="post-submit btn btn-primary"type="submit">login</button>
+            </div>
+        </form>
     </div>
-    <div>
-        <label for="password-login">password:</label>
-        <input type="password" id="apw-login" />
+    <div class="child" >
+        <form class="asignup-form">
+            <div class="form-u">
+                <label for="username-signup">username:</label>
+                <input type="text" id="adminname-signup" />
+            </div>
+            <div class="form-i">
+                <label for="email-signup">email:</label>
+                <input type="text" id="aem-signup" />
+            </div>
+            <div>
+                <label for="password-signup">password:</label>
+                <input type="password" id="apw-signup" />
+            </div>
+            <div class="btn">
+                <button class="post-submit btn btn-primary"type="submit">signup</button>
+            </div>
+        </form>
     </div>
-    <div>
-        <button type="submit">login</button>
-    </div>
-</form>
-
-<form class="asignup-form">
-    <div>
-        <label for="username-signup">username:</label>
-        <input type="text" id="adminname-signup" />
-    </div>
-    <div>
-        <label for="email-signup">email:</label>
-        <input type="text" id="aem-signup" />
-    </div>
-    <div>
-        <label for="password-signup">password:</label>
-        <input type="password" id="apw-signup" />
-    </div>
-    <div>
-        <button type="submit">signup</button>
-    </div>
-</form>
+</div>
+</div>
+</div>
 <script src="/javascript/login.js"></script>
