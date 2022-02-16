@@ -1,12 +1,23 @@
 <div class="comments">
-    {{#each this}}
     <section class="comment">
         <div class="meta">
-            {{user.username}} on {{format_date created_at}}
+            {{!-- {{user.username}} on {{created_at}} --}}
+            <span>hi i am a comment</span>
         </div>
         <div class="text">
-            {{comment_text}}
+            {{!-- {{comment_text}} --}}
         </div>
     </section>
-    {{/each}}
 </div>
+
+
+<form class="new-comment">
+    <div>
+        <label for="comment-body">Comment:</label>
+        <input type="text" id="comment-body" />
+    </div>
+    <div>
+        <button type="submit">Posts</button>
+    </div>
+</form>
+<script src="/javascript/comments.js"></script>
