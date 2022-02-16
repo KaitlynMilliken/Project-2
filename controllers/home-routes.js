@@ -23,7 +23,7 @@ router.get('/newPost', (req, res) => {
 
 router.get('/', (req, res) => {
   console.log(req.session);
-  res.render('homepage');
+  res.render('user-login');
 });
 
 router.get('/login', (req, res) => {
