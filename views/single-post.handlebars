@@ -1,2 +1,16 @@
-{{> post-info post }}
-{{> comments }}
+<article class="post">
+    {{ post.title }}
+    {{ post.description }}
+</article>
+
+{{> comments post.comments }}
+
+<form class="new-comment">
+    <div>
+        <textarea name="comment-body"></textarea>
+    </div>
+    <div>
+        <button type="submit">Posts</button>
+    </div>
+</form>
+<script src="/javascript/comments.js"></script>

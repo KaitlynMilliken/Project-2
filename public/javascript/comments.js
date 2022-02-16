@@ -1,19 +1,23 @@
 async function commentHandler(event) {
     event.preventDefault();
+    
+    const comment_text = document.querySelector('textarea[name="comment-body"]').value.trim();
+    const post_id = window.location.toString().split('/')[
+        window.location.toString().split('/').length - 1
+    ];
 
-    const comment = document.querySelector('#comment-body').value.trim();
-
-    if (comment) {
+    if (comment_text) {
         const response = await fetch('/api/comment/', {
             method: 'post',
             body: JSON.stringify({
-                comment
+                post_id,
+                comment_text
             }),
             headers: { 'Content-Type': 'application/json' }
         });
 
         if (response.ok) {
-            console.log('ayo');
+            console.log("WOOOOOO");
             //document.location.replace('/posts');
         } else {
             alert(response.statusText);
