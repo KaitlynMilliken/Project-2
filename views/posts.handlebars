@@ -1,9 +1,41 @@
-<ul class="post-list">
-  {{#each posts as |post|}}
-  <li>
-    {{> post-info post }}
-  </li>
-  {{/each}}
-</ul>
+<div class="row justify-content-center">
+  <div class="col-8 text-center">
+    <div class="display-4">Questions for your doctor?</div> 
+    <span class="fs-2">See the posts below or create a new post!</span>
+  </div>
+</div>
+<div class="mt-4 row justify-content-center">
+  <div class="col-6 post-list list-group" role="tablist">
+    {{#each posts as |post|}}
+    <div class="list-group-item" role="tab">
+      {{> post-info post }}
+    </div>
+    {{/each}}
+  </div>
+  <div class="col-2">
+    <a href="/newPost">
+      <button type="button" class="btn btn-primary">New Post <i class="bi bi-plus-circle"></i></div></button>
+    </a>
+  </div>
+</div>
+<div class="mt-5 row justify-content-center">
+  <div class="col-8">
+    <div>
+      <span class="fs-2">Need a fast answer regarding a COVID-19 question? <a href="/FAQ" class="FAQ"> Click here! <i
+            class="bi bi-lightbulb"></i></a></span>
+    </div>
+  </div>
+</div>
 
-<a href="/newPost">New Post</a>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  $('.FAQ').hover(
+    function () {
+      $('.bi-lightbulb').addClass("bi-lightbulb-fill");
+      $('.bi-lightbulb').removeClass("bi-lightbulb");
+    },
+    function () {
+      $('.bi-lightbulb-fill').addClass("bi-lightbulb");
+      $('.bi-lightbulb').removeClass("bi-lightbulb-fill");
+    });
+</script>
