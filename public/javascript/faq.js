@@ -1,35 +1,12 @@
-const passageText = `COVID-19 is a disease caused by a virus called SARS-CoV-2. Most people with COVID-19 have mild symptoms, but some people can become severely ill. 
-Although most people with COVID-19 get better within weeks of illness, some people experience post-COVID conditions. Post-COVID conditions are a wide range of new, 
-returning, or ongoing health problems people can experience more than four weeks after first being infected with the virus that causes COVID-19. 
-Older people and those who have certain underlying medical conditions are more likely to get severely ill from COVID-19. Vaccines against COVID-19 are safe and effective.
+const passageText = `COVID-19 is a disease caused by a virus called SARS-CoV-2. Most people with COVID-19 have mild symptoms, but some people can become severely ill. Although most people with COVID-19 get better within weeks of illness, some people experience post-COVID conditions. Post-COVID conditions are a wide range of new, returning, or ongoing health problems people can experience more than four weeks after first being infected with the virus that causes COVID-19. Older people and those who have certain underlying medical conditions are more likely to get severely ill from COVID-19. Vaccines against COVID-19 are safe and effective.
 
-COVID-19 spreads when an infected person breathes out droplets and very small particles that contain the virus. These droplets and particles can be breathed in by 
-other people or land on their eyes, noses, or mouth. In some circumstances, they may contaminate surfaces they touch. People who are closer than 6 feet from the 
-infected person are most likely to get infected.
+COVID-19 spreads when an infected person breathes out droplets and very small particles that contain the virus. These droplets and particles can be breathed in by  other people or land on their eyes, noses, or mouth. In some circumstances, they may contaminate surfaces they touch. People who are closer than 6 feet from the infected person are most likely to get infected.
 
-COVID-19 is spread in three main ways:
+COVID-19 is spread in three main ways: Breathing in air when close to an infected person who is exhaling small droplets and particles that contain the virus. Having these small droplets and particles that contain virus land on the eyes, nose, or mouth, especially through splashes and sprays like a cough or sneeze. Touching eyes, nose, or mouth with hands that have the virus on them.. 
 
-Breathing in air when close to an infected person who is exhaling small droplets and particles that contain the virus.
-Having these small droplets and particles that contain virus land on the eyes, nose, or mouth, especially through splashes and sprays like a cough or sneeze.
-Touching eyes, nose, or mouth with hands that have the virus on them.. 
+Symptoms are chills, cough, shortness of breath or difficulty breathing, fatigue, muscle or body aches, headache, new loss of taste or smell, sore throat, congestion or runny nose, Nausea or vomiting, and or diarrhea.
 
-People with COVID-19 have had a wide range of symptoms reported – ranging from mild symptoms to severe illness. Symptoms may appear 2-14 days after exposure to the virus. 
-Anyone can have mild to severe symptoms. People with these symptoms may have COVID-19:
-
-- Fever or chills
-- Cough
-- Shortness of breath or difficulty breathing
-- Fatigue
-- Muscle or body aches
-- Headache
-- New loss of taste or smell
-- Sore throat
-- Congestion or runny nose
-- Nausea or vomiting
-- Diarrhea
-
-This list does not include all possible symptoms. CDC will continue to update this list as we learn more about COVID-19. Older adults and people who have severe underlying medical 
-conditions like heart or lung disease or diabetes seem to be at higher risk for developing more serious complications from COVID-19 illness.`;
+This list does not include all possible symptoms. CDC will continue to update this list as we learn more about COVID-19. Older adults and people who have severe underlying medical conditions like heart or lung disease or diabetes seem to be at higher risk for developing more serious complications from COVID-19 illness.`;
 
 
 

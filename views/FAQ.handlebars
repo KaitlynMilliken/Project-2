@@ -3,22 +3,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Q and A</title>
 </head>
+
 <body>
     <div class="container px-4 gx-5">
+        <div class="mb-3 text-center">
+            <span class="display-4">Have a COVID-19 related question? Enter below!</span>
+        </div>
         <div class="mb-3">
             <label for="question" class="form-label">Question</label>
             <input type="text" class="form-control" id="question" placeholder="ask a question">
         </div>
         <div class="mb-3">
-            <label for="passage" class="form-label">Chubb D. Initial Handling Instructions</label>
-            <p class="form-control" id="passage" ></p>
-        </div>
-        <div class="mb-3">
-            <button id='ai' type="button" class="btn btn-primary" disabled>AI</button>
+            <button id='ai' type="button" class="btn btn-primary" disabled>Ask Now!</button>
         </div>
         <div class="mb-3">
             <label for="result" class="form-label">Result</label>
-            <textarea class="form-control" id="result" rows="10" disabled></textarea>
+            <textarea class="form-control" id="result" rows="5" disabled></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="passage" class="form-label">Read the highighted text from the CDC for more information...</label>
+            <p class="form-control" id="passage"></p>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"></script>
