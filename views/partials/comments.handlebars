@@ -1,14 +1,29 @@
-<div class="row justify-content-center">
-  <div class="post col-8">
+<div class="row justify-content-center mt-4">
+  <div class="post col-4 bg-light">
+    <span class="fs-3">Comments </span>
     {{#each this}}
-    <section class="comment">
-      <div class="meta">
-        {{user.username}}
-      </div>
+    <section class="comment mt-3">
       <div class="text">
-        {{comment_text}}
+        <span class="user-comment">{{User.username}}</span> said: {{comment_text}}
       </div>
     </section>
     {{/each}}
   </div>
+  <div class="post col-4">
+    <form class="new-comment">
+      <div>
+        <textarea name="comment-body" class="comment-form" placeholder="Add a new comment here..."></textarea>
+      </div>
+      <div>
+        <button type="submit" class="btn btn-primary comment-btn">Submit Comment</button>
+      </div>
+    </form>
+  </div>
 </div>
+<script src="/javascript/comments.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  $(".comment-btn").on("click", () => {
+    location.reload();
+  });
+</script>

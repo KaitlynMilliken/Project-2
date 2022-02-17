@@ -39,3 +39,15 @@ a {
     border-radius: 20px;
     
 }
+
+.comment-form{
+    width: 100%;
+}
+
+.comment-btn{
+    float: right;
+}
+
+.user-comment{
+    font-style: italic;
+}

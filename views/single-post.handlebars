@@ -1,18 +1,12 @@
 <div class="row justify-content-center">
-    <div class="post col-8">
+    <div class="post col-8 mt-3 text-center">
         <span class="display-4">{{ post.title }}</span>
-        <p class="fs-4">{{ post.description }}</p>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="post col-8 mt-3">
+        <p class="mt-3">{{ post.description }}</p>
     </div>
 </div>
 
 {{> comments post.comments }}
-
-<form class="new-comment">
-    <div>
-        <textarea name="comment-body"></textarea>
-    </div>
-    <div>
-        <button type="submit">Posts</button>
-    </div>
-</form>
-<script src="/javascript/comments.js"></script>
