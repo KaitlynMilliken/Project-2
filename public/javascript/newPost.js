@@ -1,5 +1,7 @@
 async function newPostHandler(event) {
-    event.preventDefault();
+    event.preventDefault(); 
+
+    console.log("clicking");
 
     const title = document.querySelector('#post-title').value.trim();
     const description = document.querySelector('#post-body').value.trim();
@@ -13,7 +15,6 @@ async function newPostHandler(event) {
             }),
             headers: { 'Content-Type': 'application/json' }
         });
-        console.log(response);
 
         if (response.ok) {
             console.log('success');
@@ -24,4 +25,4 @@ async function newPostHandler(event) {
     }
 }
 
-document.querySelector('.new-post').addEventListener('submit', newPostHandler);
+$(".post-submit").on('click', newPostHandler);

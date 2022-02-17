@@ -51,6 +51,11 @@ a {
 .user-comment{
     font-style: italic;
 }
+
+#logout{
+    float: right;
+}
+
 @media screen and (max-width:575px) {
     .parent {
         margin: 1px;

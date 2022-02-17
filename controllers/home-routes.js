@@ -1,20 +1,44 @@
 const router = require('express').Router();
-const { User, Post, Comment, Admin } = require('../models');
+const { User, Post, Comment } = require('../models');
 
 router.get('/posts', (req, res) => {
-  Post.findAll({
-    attributes: [
-      'id',
-      'title',
-      'description',
-      'created_at',
-      'updated_at'
-  ]}).then(dbPostData => {
-        const posts = dbPostData.map(post => post.get({ plain: true }));
-        res.render('posts', { posts });
-  }).catch(err => {
-    res.status(500).json(err);
-  });
+  let isAdmin = req.session.admin;
+  let currentUser = req.session.user_id;
+
+  if(isAdmin){
+    Post.findAll({
+      attributes: [
+        'id',
+        'title',
+        'description',
+        'created_at',
+        'updated_at'
+    ]}).then(dbPostData => {
+          const posts = dbPostData.map(post => post.get({ plain: true }));
+          res.render('posts', { posts });
+    }).catch(err => {
+      res.status(500).json(err);
+    });
+  }
+
+  else{
+    Post.findAll({
+      where: {
+        user_id: currentUser
+      },
+      attributes: [
+        'id',
+        'title',
+        'description',
+        'created_at',
+        'updated_at'
+    ]}).then(dbPostData => {
+          const posts = dbPostData.map(post => post.get({ plain: true }));
+          res.render('posts', { posts });
+    }).catch(err => {
+      res.status(500).json(err);
+    });
+  }
 });
 
 router.get('/newPost', (req, res) => {
