@@ -54,7 +54,6 @@ a {
 .h1-login{
     text-align: center;
 }
-
 @media screen and (max-width:575px) {
     .parent {
         margin: 1px;
@@ -187,3 +186,5 @@ a {
         
     }
 }
+/* for comment partial page*/
+ 
