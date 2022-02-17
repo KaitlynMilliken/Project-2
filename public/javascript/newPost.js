@@ -17,7 +17,7 @@ async function newPostHandler(event) {
         });
 
         if (response.ok) {
-            console.log('success');
+            window.location.href = "/posts";
         }
         else {
             alert(response.statusText);
