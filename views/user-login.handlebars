@@ -1,5 +1,9 @@
-<form class="login-form">
-    <div>
+<div class="outer-border">
+    <h1 class="h1-login">My Doctor</h1>
+<div class="login-border">
+<div class="parent-l">
+<form class="login-form child-l">
+    <div class="form-i">
         <label for="email-login">email:</label>
         <input type="text" id="email-login" />
     </div>
@@ -7,17 +11,17 @@
         <label for="password-login">password:</label>
         <input type="password" id="password-login" />
     </div>
-    <div>
-        <button type="submit">login</button>
+    <div class="btn-l">
+        <button class="post-submit btn btn-primary" type="submit">login</button>
     </div>
 </form>
 
-<form class="signup-form">
-    <div>
+<form class="signup-form child-l">
+    <div class="form-u">
         <label for="username-signup">username:</label>
         <input type="text" id="username-signup" />
     </div>
-    <div>
+    <div class="form-i">
         <label for="email-signup">email:</label>
         <input type="text" id="email-signup" />
     </div>
@@ -25,8 +29,8 @@
         <label for="password-signup">password:</label>
         <input type="password" id="password-signup" />
     </div>
-    <div>
-        <button type="submit">signup</button>
+    <div class="btn-l">
+        <button class="post-submit btn btn-primary" type="submit">signup</button>
     </div>
     <div class="form-check">
         <input class="form-check-input" type="radio" name="isAdmin" id="adminTrue">
@@ -41,5 +45,7 @@
         </label>
     </div>
 </form>
-
+</div>
+</div>
+</div>
 <script src="/javascript/login.js"></script>

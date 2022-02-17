@@ -8,12 +8,12 @@ a {
     float: right;
 }
 
-.parent {
+.parent-l {
     margin: 1rem;
     padding: 2rem 2rem;
     text-align: center;
 }
-.child {
+.child-l {
     display: inline-block;
     padding: 1rem 1rem;
     vertical-align: middle;
@@ -28,7 +28,7 @@ a {
     padding-bottom: 10px ;
 }
 
-.btn {
+.btn-l {
     padding-top: 10px;
 }
 .outer-border{
@@ -60,12 +60,12 @@ a {
     text-align: center;
 }
 @media screen and (max-width:575px) {
-    .parent {
+    .parent-l {
         margin: 1px;
         padding: 2px 2px;
         text-align: center;
     }
-    .child {
+    .child-l {
         display: inline-block;
         padding: 1px 1px;
         vertical-align: middle;
@@ -80,7 +80,7 @@ a {
         padding-bottom: 10px ;
     }
     
-    .btn {
+    .btn-l {
         padding-top: 10px;
     }
     .outer-border{
@@ -93,12 +93,12 @@ a {
     }
 }
 @media screen and (max-width:768px) {
-    .parent {
+    .parent-l {
         margin: 1px;
         padding: 2px 2px;
         text-align: center;
     }
-    .child {
+    .child-l {
         display: inline-block;
         padding: 1px 1px;
         vertical-align: middle;
@@ -113,7 +113,7 @@ a {
         padding-bottom: 10px ;
     }
     
-    .btn {
+    .btn-l{
         padding-top: 10px;
     }
     .outer-border{
@@ -126,12 +126,12 @@ a {
     }
 }
 @media screen and (max-width:380px) {
-    .parent {
+    .parent-l {
         margin: 1px;
         padding: 1px 1px;
         text-align: center;
     }
-    .child {
+    .child-l {
         display: inline-block;
         padding: 1px 1px;
         vertical-align: middle;
@@ -146,7 +146,7 @@ a {
         padding-bottom: 10px ;
     }
     
-    .btn {
+    .btn-l {
         padding-top: 10px;
     }
     .outer-border{
@@ -159,12 +159,12 @@ a {
     }
 }
 @media screen and (max-width:330px) {
-    .parent {
+    .parent-l {
         margin: 1px;
         padding: 1px 1px;
         text-align: center;
     }
-    .child {
+    .child-l {
         display: inline-block;
         padding: 1px 1px;
         vertical-align: middle;
@@ -179,7 +179,7 @@ a {
         padding-bottom: 10px ;
     }
     
-    .btn {
+    .btn-l {
         padding-top: 10px;
     }
     .outer-border{
