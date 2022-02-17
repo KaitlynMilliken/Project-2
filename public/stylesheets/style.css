@@ -51,3 +51,135 @@ a {
 .user-comment{
     font-style: italic;
 }
+@media screen and (max-width:575px) {
+    .parent {
+        margin: 1px;
+        padding: 2px 2px;
+        text-align: center;
+    }
+    .child {
+        display: inline-block;
+        padding: 1px 1px;
+        vertical-align: middle;
+    }
+    
+    .form-i {
+        padding-bottom: 10px;
+        padding-left: 30px;
+    }
+    
+    .form-u {
+        padding-bottom: 10px ;
+    }
+    
+    .btn {
+        padding-top: 10px;
+    }
+    .outer-border{
+        padding: 50px;
+    }
+    .login-border {
+        border: 10px solid black;
+        border-radius: 20px;
+        
+    }
+}
+@media screen and (max-width:768px) {
+    .parent {
+        margin: 1px;
+        padding: 2px 2px;
+        text-align: center;
+    }
+    .child {
+        display: inline-block;
+        padding: 1px 1px;
+        vertical-align: middle;
+    }
+    
+    .form-i {
+        padding-bottom: 10px;
+        padding-left: 30px;
+    }
+    
+    .form-u {
+        padding-bottom: 10px ;
+    }
+    
+    .btn {
+        padding-top: 10px;
+    }
+    .outer-border{
+        padding: 50px;
+    }
+    .login-border {
+        border: 10px solid black;
+        border-radius: 20px;
+        
+    }
+}
+@media screen and (max-width:380px) {
+    .parent {
+        margin: 1px;
+        padding: 1px 1px;
+        text-align: center;
+    }
+    .child {
+        display: inline-block;
+        padding: 1px 1px;
+        vertical-align: middle;
+    }
+    
+    .form-i {
+        padding-bottom: 10px;
+        padding-left: 30px;
+    }
+    
+    .form-u {
+        padding-bottom: 10px ;
+    }
+    
+    .btn {
+        padding-top: 10px;
+    }
+    .outer-border{
+        padding: 30px;
+    }
+    .login-border {
+        border: 10px solid black;
+        border-radius: 20px;
+        
+    }
+}
+@media screen and (max-width:330px) {
+    .parent {
+        margin: 1px;
+        padding: 1px 1px;
+        text-align: center;
+    }
+    .child {
+        display: inline-block;
+        padding: 1px 1px;
+        vertical-align: middle;
+    }
+    
+    .form-i {
+        padding-bottom: 10px;
+        padding-left: 2px;
+    }
+    
+    .form-u {
+        padding-bottom: 10px ;
+    }
+    
+    .btn {
+        padding-top: 10px;
+    }
+    .outer-border{
+        padding: 30px;
+    }
+    .login-border {
+        border: 10px solid black;
+        border-radius: 20px;
+        
+    }
+}
