@@ -32,7 +32,7 @@ a {
     padding-top: 10px;
 }
 .outer-border{
-    padding: 300px;
+    padding: 100px;
 }
 .login-border {
     border: 10px solid black;
@@ -51,6 +51,10 @@ a {
 .user-comment{
     font-style: italic;
 }
+.h1-login{
+    text-align: center;
+}
+
 @media screen and (max-width:575px) {
     .parent {
         margin: 1px;
