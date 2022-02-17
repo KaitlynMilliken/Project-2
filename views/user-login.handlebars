@@ -1,45 +1,55 @@
-<form class="login-form">
-    <div>
-        <label for="email-login">email:</label>
-        <input type="text" id="email-login" />
+<div class="row justify-content-center">
+    <div class="col-8">
+        <header class="display-4 text-center">Welcome to My Doctor!</header>
     </div>
-    <div>
-        <label for="password-login">password:</label>
-        <input type="password" id="password-login" />
+</div>
+
+<form class="login-form row justify-content-center mt-4">
+    <div class="col-8">
+        <span class="fs-5">Sign in here!</span>
+        <input type="text" id="email-login" placeholder="Email" class="mt-2" />
     </div>
-    <div>
-        <button type="submit">login</button>
+    <div class="col-8 mt-3">
+        <input type="password" id="password-login" placeholder="Password" />
+    </div>
+    <div class="col-8 mt-4">
+        <button type="submit" class="btn btn-primary">Login</button>
     </div>
 </form>
 
-<form class="signup-form">
-    <div>
-        <label for="username-signup">username:</label>
-        <input type="text" id="username-signup" />
+<form class="signup-form row justify-content-center mt-4">
+    <div class="col-8">
+        <span class="fs-5">Sign up below!</span>
+        <input type="text" id="username-signup" placeholder="username" />
     </div>
-    <div>
-        <label for="email-signup">email:</label>
-        <input type="text" id="email-signup" />
+    <div class="col-8 mt-3">
+        <input type="text" id="email-signup" placeholder="email" />
     </div>
-    <div>
-        <label for="password-signup">password:</label>
-        <input type="password" id="password-signup" />
+    <div class="col-8 mt-3">
+        <input type="password" id="password-signup" placeholder="password" />
     </div>
-    <div>
-        <button type="submit">signup</button>
+    <div class="col-8 mt-4">
+        <span class="fs-5">Are you a doctor?</span>
+        <div class="form-check col-8">
+            <input class="form-check-input" type="radio" name="isAdmin" id="adminTrue">
+            <label class="form-check-label" for="isAdmin">
+                Yes
+            </label>
+        </div>
+        <div class="form-check col-8">
+            <input class="form-check-input" type="radio" name="isAdmin" id="adminFalse">
+            <label class="form-check-label" for="isAdmin">
+                No
+            </label>
+        </div>
     </div>
-    <div class="form-check">
-        <input class="form-check-input" type="radio" name="isAdmin" id="adminTrue">
-        <label class="form-check-label" for="isAdmin">
-            Yes
-        </label>
-    </div>
-    <div class="form-check">
-        <input class="form-check-input" type="radio" name="isAdmin" id="adminFalse">
-        <label class="form-check-label" for="isAdmin">
-            No
-        </label>
+    <div class="col-8 mt-4">
+        <button type="submit" class="btn btn-primary">Sign Up</button>
     </div>
 </form>
-
 <script src="/javascript/login.js"></script>
+<style>
+    input {
+        width: 100%;
+    }
+</style>
