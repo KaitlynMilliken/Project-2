@@ -27,7 +27,7 @@ THEN A doctor with experience can diagnose me
 * increase the amount of interaction with a doctor to direct messages
 * Add easier ways to show symptoms through being able to add pictures to posts
 # Contributors
-* <a src="https://github.com/KaitlynMilliken"> Kaitlyn Milliken </a>
-* <a src="https://github.com/Elijahb22"> Elijah Busick</a>
+- [Kaitlyn Milliken](https://github.com/KaitlynMilliken)
+- [Elijah Busick](https://github.com/Elijahb22)
 
 
